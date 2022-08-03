@@ -10,6 +10,7 @@ app.engine('hbs', handlebars.engine({
 }));
 
 app.get('/test', (req, res) => res.render('test'));
+app.get('/test2', (req, res) => res.render('test2'));
 
 app.get('/', (req, res) => res.send('Labas'));
 
