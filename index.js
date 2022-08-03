@@ -1,5 +1,6 @@
 import express from 'express';
 import handlebars from 'express-handlebars';
+import mysql from 'mysql2';
 
 const app = express();
 const port = 8081;
