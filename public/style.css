@@ -1,3 +1,87 @@
+:root {
+   --dark: #374151;
+   --darker: #1F2937;
+   --darkest: #111827;
+   --gray: #6B7280;
+   --light: #EEE;
+   --pink: #EC4899;
+}
+
 * {
-   background-color: antiquewhite;
+   box-sizing: border-box;
+   margin: 0;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   background: var(--dark);
+   color: #fff;
+}
+
+header {
+   padding: 2rem 1rem;
+   max-width: 800px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+h1 {
+   font-size: 2rem 1rem;
+   font-weight: 300;
+   color: var(--gray);
+   margin: 2rem;
+
+}
+
+form {
+   display: flex;
+}
+
+input, button {
+   appearance: none;
+   outline: none;
+   background: none;
+}
+input {
+   flex: 1 1 0%;
+   background-color: var(--darker);
+   padding: 1rem;
+   border-radius: 1rem;
+   margin: 1rem 2rem;
+   color: var(--light);
+   border: solid 1px var(--gray)
+}
+
+input::placeholder {
+   color: var(--gray);
+}
+
+button {
+   color: var(--pink);
+   font-size: 1.25rem;
+   font-weight: 700;
+   cursor: pointer;
+   transition: 0.4s;
+   border: none;
+}
+
+button:hover {
+   opacity: 0.8;
+}
+
+main {
+   flex: 1 1 0%;
+   padding: 2rem 1rem;
+   max-width: 800px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+span {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin: 2rem;
+   color: var(--light);
 }
