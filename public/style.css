@@ -1,24 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
 :root {
-   --dark: #374151;
-   --darker: #1F2937;
-   --darkest: #111827;
+   --dark: #1F2937;
    --gray: #6B7280;
-   --light: #EEE;
    --pink: #EC4899;
 }
 
 * {
-   box-sizing: border-box;
    margin: 0;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-family: Lato;
 }
 
 body {
    display: flex;
    flex-direction: column;
    min-height: 100vh;
-   background: var(--dark);
-   color: #fff;
+   background-image: linear-gradient(to bottom right, #240000, #095779, #00d4ff );
 }
 
 header {
@@ -33,39 +29,64 @@ h1 {
    font-weight: 300;
    color: var(--gray);
    margin: 2rem;
+}
 
+hr {
+   border-width: 0;
+   border: solid 1px var(--pink);
+   margin-bottom: 2rem;
 }
 
 form {
    display: flex;
 }
 
-input, button {
-   appearance: none;
-   outline: none;
-   background: none;
-}
-input {
-   flex: 1 1 0%;
-   background-color: var(--darker);
-   padding: 1rem;
-   border-radius: 1rem;
-   margin: 1rem 2rem;
-   color: var(--light);
-   border: solid 1px var(--gray)
-}
-
-input::placeholder {
-   color: var(--gray);
-}
+.input{
+   width: 600px;
+   margin: 0 auto;
+   font-size: 1.4em;
+}  
+   input{    
+     width: 600px;
+     height: 80px;  
+     margin-top: 50px;
+     font-family: Lato;
+     font-size: 1.5em;    
+     background-color: transparent;
+     border: none;
+     border-top: 3px solid #4EA5D9;    
+     border-bottom: 3px solid #4EA5D9;
+     outline: none;
+     color: #4EA5D9;
+     padding-left: 10px;  
+   }    
+     input:focus + label {
+       top: -130px;
+       font-size: 1.2em;
+       transition: all .3s;
+     }
+   
+   label{
+     display: block;
+     position: relative;
+     left: 10px;
+     top: -70px;
+     font-size: 1.8em;
+     cursor: text;
+     color: #44CFCB;    
+     transition: all .3s;    
+   }
 
 button {
+   height: 80px;
    color: var(--pink);
-   font-size: 1.25rem;
-   font-weight: 700;
+   font-size: 1.5em;
+   font-weight: 100px;
+   margin: auto;
    cursor: pointer;
    transition: 0.4s;
    border: none;
+   background-color: transparent;
 }
 
 button:hover {
@@ -80,8 +101,15 @@ main {
    margin: 0 auto;
 }
 
-span {
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   margin: 2rem;
+section>div {
+   flex: 1 1 0%;
+   background-color: var(--dark);
+   padding: 1rem;
+   border-radius: 1rem;
+   margin: 1rem 2rem;
    color: var(--light);
+   border: solid 1px var(--gray)
+}
+span {
+   color: var(--gray);;
 }
