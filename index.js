@@ -3,6 +3,7 @@ import handlebars from 'express-handlebars';
 
 const app = express();
 const port = 8081;
+app.use(express.static('public'));
 
 app.set('view engine', 'hbs');
 app.engine('hbs', handlebars.engine({
