@@ -10,9 +10,6 @@ app.engine('hbs', handlebars.engine({
    extname: 'hbs'
 }));
 
-app.get('/test', (req, res) => res.render('test'));
-app.get('/test2', (req, res) => res.render('test2'));
-
-app.get('/', (req, res) => res.send('Labas'));
+app.get('/', (req, res) => res.render('index'));
 
 app.listen(port, () => console.log(`Starting server on port ${port}`));
