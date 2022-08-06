@@ -2,6 +2,11 @@
 
 <ul>
    {{#each data}}
-   <li>{{this}}</li>
+   <li>
+        <details>
+            <summary>{{this.productLine}}</summary>
+            <p>{{this.textDescription}}</p>
+        </details>
+    </li>
    {{/each}}
 </ul>
