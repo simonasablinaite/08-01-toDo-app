@@ -65,7 +65,8 @@ form {
        font-size: 1.2em;
        transition: all .3s;
      }
-   
+
+  
    label{
      display: block;
      position: relative;
@@ -113,3 +114,4 @@ section>div {
 span {
    color: var(--gray);;
 }
+

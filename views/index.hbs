@@ -8,7 +8,7 @@
 
 <hr/>
 <main>
-   <form>
+   <form method="post">
       <div class="input">    
          <input type="text" id="input-a" name="note"/>  
          <label for="input-a">Your Text here! </label>
@@ -19,8 +19,16 @@
 
    <section>
       {{#each notes}}
-      <div>
-         <span>Example note text</span>
+      <div class="note">
+         <span>{{this.note}}</span>
+         <div class="buttons">
+            <button onclick="deleteNote({{this.noteId}})">
+               <i class="fa-light fa-trash-can"></i>
+            </button>
+            <button>
+               <i class="fa-thin fa-pencil"></i>
+            </button>
+         </div>
       </div>
       <div>
          <span>{{this}}</span>
