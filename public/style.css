@@ -78,11 +78,9 @@ form {
      transition: all .3s;    
    }
 
-button {
-   height: 80px;
+.save-button {
    color: var(--pink);
-   font-size: 1.5em;
-   font-weight: 100px;
+   font-size: 1.8em;
    margin: auto;
    cursor: pointer;
    transition: 0.4s;
@@ -90,7 +88,7 @@ button {
    background-color: transparent;
 }
 
-button:hover {
+.save-button:hover {
    opacity: 0.8;
 }
 
@@ -103,6 +101,8 @@ main {
 }
 
 section>div {
+   display: flex;
+   justify-content: space-between;
    flex: 1 1 0%;
    background-color: var(--dark);
    padding: 1rem;
@@ -115,3 +115,8 @@ span {
    color: var(--gray);;
 }
 
+button {
+   background-color: transparent;
+   color: var(--pink);
+   border: none;
+}
